@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(206, 94%, 87%);
+}
+.first-step{
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    
+}
+.stepes{
+    height: 100%;
+    width: 30%;
+    background-color: hsl(243, 100%, 62%);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 15px;
+    padding: 30px 10px;
+    border-radius: 15px;
+}
+.step-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.step-box h3{
+    border:  solid 1px white;
+    width: 28px;
+    padding: 3px;
+    text-align: center;
+    height: 28px;
+    border-radius: 50%;
+}
+.step-box .step-1{
+    background-color:hsl(206, 94%, 87%) ;
+    color: hsl(213, 96%, 18%);
+    border: none;
+}
+
+.step-detailles span{
+    font-size: 14px;
+    color: hsl(229, 24%, 87%);
+    
+}
+.step-detailles p{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+
+}
+.info-title{
+    margin: 25px 0 ;
+    height: 10%;
+}
+.info-title h3{
+    color: hsl(213, 96%, 18%);
+    line-height: 40px;
+} 
+.inputs-box{
+    width: 80%;
+    height: 70%;
+    margin-top: 10px;
+
+}
+.info-title p{
+    color: hsl(231, 11%, 63%);
+}
+.inputs-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs-box form label{
+    color:hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.inputs-box h5{
+    text-align: end;
+    color: red;
+ 
+}
+.inputs-box form input{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+    border: 1px solid hsl(231, 11%, 63%) ;
+}
+.next-step-btn{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.next-step-btn button{
+    background-color:hsl(213, 96%, 18%) ;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.next-step-btn button:hover{
+    background-color:hsl(231, 11%, 63%) ;
+    color:hsl(213, 96%, 18%) ;
+    transition: ease-in 0.1s;
+    
+}
