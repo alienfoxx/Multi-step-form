@@ -134,8 +134,9 @@
 }
 .card-box{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: 500px;
     margin-top: 50px;
     justify-content: space-around;
 }
@@ -143,14 +144,114 @@
     border: 1px solid hsl(243, 100%, 62%) ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     width: 30%;
     padding: 15px;
     height: 50%;
     border-radius: 18px;
     line-height: 24px;
+    cursor: pointer;
 }
 .card:hover{
 background-color: aliceblue;
 transition: ease-in 0.2s;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(243, 100%, 62%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 12px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.togell-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    background-size: cover;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.action-container{
+display: flex;
+justify-content: space-around;
+
+}
+.next-stp-btn{
+    background-color:hsl(213, 96%, 18%) ;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.go-back-btn{
+    background-color:transparent ;
+    color: hsl(213, 96%, 18%);
+    height: 40px;
+    width: 100px;
+    border: 1px solid ;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
 }
