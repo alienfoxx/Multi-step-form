@@ -8,16 +8,96 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  
+  <link rel="stylesheet" href="styles.css">  
   <title>Frontend Mentor | Multi-step form</title>
-
-  
-  
 </head>
 <body>
   <div class="container">
-    
+    <div class="step-section">
+      <aside class="step-aside">
+        <div class="step-wrapper">
+          <div class="step-box">
+            <h3>1</h3>
+            <div class="step-detaille">
+              <span>STEP 1</span>
+              <p>YOUR INFO</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <h3>2</h3>
+            <div class="step-detaille">
+              <span>STEP2</span>
+              <p>SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <h3>3</h3>
+            <div class="step-detaille">
+              <span>STEP3</span>
+              <p>ADD-ONS</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <h3>4</h3>
+            <div class="step-detaille">
+              <span>STEP4</span>
+             <p>SUMMARY</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="infos-section">
+        <div class="info-title">
+          <h1>Select Your plan</h1>
+          <p>You have the Option Of monthly or yearly billing</p>
+        </div>
+        <div class="plan-secetion">
+          <div class="plan-card">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-arcade.svg" alt="">
+            </div>
+            <div class="plan-detaille">
+              <p>Arcade</p>
+              <span>$9/mo</span>
+            </div>
+          </div>
+          <div class="plan-card">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-advanced.svg" alt="">
+            </div>
+            <div class="plan-detaille">
+              <p>Advanced</p>
+              <span>$11/mo</span>
+            </div>
+          </div>
+          <div class="plan-card">
+            <div class="plan-icon">
+              <img src="./assets/images/icon-pro.svg" alt="">
+            </div>
+            <div class="plan-detaille">
+              <p>Pro</p>
+              <span>$14/mo</span>
+            </div>
+          </div>
+         
+        </div>
+        <div class="plan-selection">
+          <h3>Monthly</h3>
+          <div class="toggel">
+            <input type="checkbox" name="check" id="switcher" class="checkbox">
+            <label for="switcher" class="toggeler"></label>
+          </div>
+          <h3>Yearly</h3>
+        </div>
+        <div class="info-action">
+          <button class="prv-stp">Go back</button>
+          <button class="nxt-stp">Next Step</button>
+          
+        </div>
+
+      </div>
+    </div>
+
   </div>
  
 

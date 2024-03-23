@@ -48,8 +48,8 @@ div.step-wrapper{
 .step-box{
     height: 5rem;
     display: flex;
-    align-items: flex-end;
-    gap: 5px;
+    align-items: center;
+    align-items: center;
     color: #fff;
     
 }
@@ -71,9 +71,13 @@ div.step-wrapper{
 }
 .step-detaille span{
     color: var(--text-color);
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
-.infos-form{
+.step-detaille p{
+    font-size: 12px;
+    margin: 0;
+}
+.infos-section{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -83,12 +87,13 @@ div.step-wrapper{
 .info-title h1{
     font-family: var(--primary-font);
     color: var(--border-color);
+    font-size: 1.5rem;
 }
 .info-title p{
     font-family: var(--primary-font);
     color: var(--text-color);
 }
-.infos-form form{
+.infos-section form{
     margin-top: 20px;
     height: 100%;
     width: 80%;
@@ -96,25 +101,25 @@ div.step-wrapper{
     flex-direction: column;
     gap: 10px;
 }
-.infos-form form label{
+.infos-section form label{
     font-family: var(--primary-font);
     font-weight: 500;
     color: var(--border-color);
 }
-.infos-form form input{
+.infos-section  form input{
     height: 35px;
     border: 1px solid var(--border-color);
     color: var(--border-color);
     font-weight: 700;
     padding-left: 10px;
 }
-.infos-form .info-action{
+.infos-section .info-action-step1{
     width: 80%;
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
 }
-.infos-form .info-action button{
+.infos-section .info-action-step1 button{
  color: #fff;
  height: 45px;
  width: 100px;
@@ -123,11 +128,107 @@ div.step-wrapper{
  border: none;
  font-weight: 600;
 }
-.infos-form .info-action button:hover{
+.infos-section .info-action-step1 button:hover{
     background-color: var(--step-color);
     transition: all 0.5s;
     color: var(--heading-color);
     cursor: pointer;
 }
+.plan-secetion{
+    width: 100%;
+    height:80% ;
+    display: flex;
+    justify-content: space-between;
+}
+.plan-secetion .plan-card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    margin: 10px;
+    width: 33.3%;
+    border:1px solid var(--border-color);
+    border-radius: 15px;
+}
+.plan-detaille p{
+    color: var(--heading-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+}
+.plan-detaille span{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+.toggeler {
+    position: relative ;
+    display: inline-block;
+    width: 70px;
+    height: 26px;
+    background-color: var(--border-color);
+    border-radius: 30px;
+    
+}
+.toggeler::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 3px;
+    left: 1px;
+    transition:  all 0.5s;
+}
+.checkbox:checked + .toggeler::after {
+    left: 40px;
+}
+.checkbox:checked + .toggeler {
+    background-color: var(--step-color);
+    
+}
+.checkbox{
+    display: none;
+}
+.plan-selection{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    gap: 15px;
+    font-family: var(--primary-font);
+    color: var(--border-color);
+}
 
-
+.info-action{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-action button.nxt-stp{
+    color: #fff;
+ height: 45px;
+ width: 100px;
+ background-color: var(--button-color);
+ border-radius: 10px;
+ border: none;
+ font-weight: 600;
+}
+.info-action button.nxt-stp:hover{
+    background-color: var(--step-color);
+    transition: all 0.5s;
+    color: var(--heading-color);
+    cursor: pointer;
+}
+.info-action button.prv-stp{
+    color: var(--heading-color);
+    border: 1px solid var(--border-color);
+    height: 45px;
+    width: 100px;
+    background-color:transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
