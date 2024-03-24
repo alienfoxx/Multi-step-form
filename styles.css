@@ -5,6 +5,7 @@
     --border-color: hsl(213, 96%, 18%);
     --heading-color:hsl(213, 96%, 18%);
     --text-color :hsl(231, 11%, 63%);
+    --purple:hsl(243, 100%, 62%);
 
 }
 body{
@@ -15,6 +16,7 @@ body{
 .container{
 background-color: var(--step-color);
 height: 100vh;
+overflow: hidden;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -138,6 +140,7 @@ div.step-wrapper{
     width: 100%;
     height:80% ;
     display: flex;
+    
     justify-content: space-between;
 }
 .plan-secetion .plan-card{
@@ -145,10 +148,10 @@ div.step-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
-    margin: 10px;
+    margin: 30px 10px;
     width: 33.3%;
     border:1px solid var(--border-color);
+    
     border-radius: 15px;
 }
 .plan-detaille p{
@@ -202,7 +205,9 @@ div.step-wrapper{
 }
 
 .info-action{
-    width: 80%;
+    
+    width: 100%;
+    height: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -231,4 +236,38 @@ div.step-wrapper{
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
+}
+.addOns-wrapper{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+.addOns-box{
+    font-family: var(--primary-font);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    color: var(--purple);
+}
+.addOns-select{
+    display: flex;
+    flex: 1;
+    gap: 20px; 
+}
+
+input[type="checkbox"]:checked {
+   accent-color: var(--purple);
+   width: 16px;
+}
+.addOns-box p{
+    font-size: 14px;
 }
