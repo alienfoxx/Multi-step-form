@@ -271,3 +271,17 @@ input[type="checkbox"]:checked {
 .addOns-box p{
     font-size: 14px;
 }
+.summary-wrapper{
+    width: 100%;
+    background-color: aliceblue;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 18px;
+}
+.summary-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
