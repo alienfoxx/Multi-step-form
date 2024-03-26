@@ -274,14 +274,46 @@ input[type="checkbox"]:checked {
 .summary-wrapper{
     width: 100%;
     background-color: aliceblue;
-    height: 60%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     padding: 15px;
+    font-family: var(--primary-font);
     border-radius: 18px;
 }
 .summary-container{
+    color: var(--purple);
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
+}
+.summary-wrapper hr{
+    width: 100%;
+}
+.summary-wrapper .add-ons{
+    display: flex;
+    justify-content: space-between;
+}
+.add-ons p:first-child{
+    color: var(--text-color);
+}
+.add-ons span{
+    color: var(--border-color);
+}
+.total-charge{
+    
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-family: var(--primary-font);
+}
+.total-charge span{
+    color: var(--text-color);
+}
+.total-charge p{
+    color: var(--purple);
+    font-weight: 600;
 }
